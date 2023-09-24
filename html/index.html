@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <p> ==> merupakan opening tag </p> ==> merupakan closing tag -->
+    <p>ini block element</p>
+
+    <!-- heading bukan hanya sekedar merubah besarnya ukuran tapi juga untuk SEO -->
+    <div id="heading"></div>
+    <h1>ini heading 1</h1>
+    <h2>ini heading 2</h2>
+    <h3>ini heading 3</h3>
+    <h4>ini heading 4</h4>
+    <h5>ini heading 5</h5>
+    <h6>ini heading 6</h6>
+
+    <!-- Text formatting -->
+    <b>bold element</b>
+    <i>italics text</i>
+    <u>underline text</u>
+    <s>kalo ini dicoret ditengah</s>
+
+    <!-- images -->
+    <!-- terdapat dua mandatory attributes yaitu src (source gambarnya) dan alt(alternative text) -->
+    <img
+      src="assets/img/gambar-mobil.jpg"
+      alt="merupakan text yang akan ditampilkan ketika src tidak menemukan gambar"
+    />
+
+    <!-- hyperlink -->
+    <!-- attributes wajib pada tag a adalah href -->
+    <!-- fungsi hyperlink tidak selalu meredirect ke sebuah halaman webite -->
+    <!-- bisa juga navigating ke file tertentu dan ke sebuah section -->
+    <a href="https://www.github.com">ini link akan pergi ke github</a>
+    <a href="#heading" style="margin-top: 500px; display: block"
+      >pergi ke heading</a
+    >
+
+    <!-- list -->
+    <!-- <ol> ordered list -->
+    <!-- <ul> unordred list -->
+    <!-- <li> list -->
+
+    <!-- ada type ada ol dan ul -->
+    <ol type="a">
+      <li>mangga</li>
+      <ul>
+        <li>hijau</li>
+        <li>manis</li>
+      </ul>
+      <li>pisang</li>
+      <ul>
+        <li>kuning</li>
+        <li>manis</li>
+      </ul>
+      <li>buah naga</li>
+      <ul>
+        <li>merah</li>
+        <li>hambar</li>
+      </ul>
+    </ol>
+    <ul type="circle">
+      <li>kucing</li>
+      <li>anjing</li>
+      <li>kambing</li>
+    </ul>
+
+    <form action="login.php" method="post">
+      <!-- attributes name pada form itu cukup penting jika backend menggunakan php -->
+      <!-- karena untuk mengambil value itu akan get pada name attributes -->
+      <input type="text" name="username" />
+
+      <select name="angka" id="angka">
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+      </select>
+    </form>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Umur</th>
+          <th>Nama</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mujahid</td>
+          <td>18</td>
+          <td>Mujahid</td>
+        </tr>
+        <tr>
+          <td>Mujahid</td>
+          <td>18</td>
+          <td>Mujahid</td>
+        </tr>
+        <tr>
+          <td>Mujahid</td>
+          <td>18</td>
+          <td>Mujahid</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Selesai brow</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
