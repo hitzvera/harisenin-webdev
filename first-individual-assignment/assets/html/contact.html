@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Google Fonts - Poppins, Raleway, and Pacifico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@500;700&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="../css/tailwind.css" />
+    <!-- root css starter -->
+    <link rel="stylesheet" href="../css/root.css" />
+  </head>
+  <body>
+    <main class="w-max-[1240px] my-0 mx-auto w-[1240px] h-full">
+      <!-- this one is for the logo -->
+      <section class="py-[22px]">
+        <h1 class="text-[24px]">
+          <span class="font-custom text-secondary">My</span
+          ><span class="font-custom text-primary-400">Portofolio</span>
+        </h1>
+      </section>
+      <!-- this one is the main content -->
+      <!-- container of the content -->
+      <section class="w-[1240px] flex h-full">
+        <!-- section 1 for the left side -->
+        <aside class="flex">
+          <div
+            class="bg-white h-full w-[400px] flex flex-col items-center pt-10 px-2 rounded-md shadow-sm"
+          >
+            <img
+              src="../images/profile-picture.png"
+              alt="profile picture"
+              width="200px"
+              height="200px"
+            />
+            <h2 class="font-bold text-[28px] py-2">Beatrice Wambui</h2>
+            <p class="text-slate-400">Fullstack Developer</p>
+            <!-- list of socials -->
+            <div class="flex gap-[18px] py-4">
+              <div
+                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              >
+                <img src="../icons/facebook-icon.png" alt="facebook icon" />
+              </div>
+              <div
+                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              >
+                <img src="../icons/linkedin-icon.png" alt="linkedin icon" />
+              </div>
+              <div
+                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              >
+                <img src="../icons/twitter-icon.png" alt="twitter icon" />
+              </div>
+              <div
+                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              >
+                <img src="../icons/github-icon.png" alt="github icon" />
+              </div>
+            </div>
+
+            <!-- phone, email and location -->
+            <div class="bg-background w-4.5/5 rounded-md px-4 mb-8">
+              <div class="flex py-6 border-b-2">
+                <div class="px-4 flex justify-center items-center">
+                  <img src="../icons/mobile-icon.png" alt="mobile icon" />
+                </div>
+                <div>
+                  <p
+                    class="leading-snug text-[14px] font-semibold text-slate-500"
+                  >
+                    Phone
+                  </p>
+                  <p class="leading-snug text-[14px] font-bold">
+                    +254723909353
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="flex py-6 border-b-2">
+                <div class="px-4 flex justify-center items-center">
+                  <img src="../icons/email1-icon.png" alt="mobile icon" />
+                </div>
+                <div>
+                  <p
+                    class="leading-snug text-[14px] font-semibold text-slate-500"
+                  >
+                    Email
+                  </p>
+                  <p
+                    class="leading-snug text-[14px] font-bold flex-nowrap overflow-hidden text-ellipsis"
+                  >
+                    beatricewambuimbugua@gmail.com
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="flex py-6 border-b-2">
+                <div class="px-4 flex justify-center items-center">
+                  <img src="../icons/location-icon.png" alt="Email icon" />
+                </div>
+                <div>
+                  <p
+                    class="leading-snug text-[14px] font-semibold text-slate-500"
+                  >
+                    Location
+                  </p>
+                  <p class="leading-snug text-[14px] font-bold">
+                    Nairobi, Kenya
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <button
+                class="bg-primary-500 text-white py-3 px-4 rounded-full flex justify-center items-center mx-auto mt-4 mb-6"
+              >
+                <img src="../icons/download.png" alt="download icon" />
+                <span class="text-[12px] ml-2">Download Resume</span>
+              </button>
+            </div>
+          </div>
+        </aside>
+        <div class="w-full h-full ml-4 shadow-sm rounded-md pt-8">
+          <!-- navbar -->
+          <navbar class="flex justify-end mb-2 mr-16">
+            <div class="border-2 rounded-xl py-2 px-24 flex gap-8 shadow-sm">
+              <a
+                href="../../index.html"
+                class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-[#E1E8EF] p-4 rounded-2xl"
+              >
+                <img
+                  src="../icons/home-black.png"
+                  alt=""
+                  width="24px"
+                  height="24px"
+                />
+                <p class="text-[12px] mt-[5px]">Home</p>
+              </a>
+              <a
+                href="./resume.html"
+                class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-[#E1E8EF] p-4 rounded-2xl"
+              >
+                <img
+                  src="../icons/resume-black.png"
+                  alt=""
+                  width="24px"
+                  height="24px"
+                />
+                <p class="text-[12px] mt-[5px]">Resume</p>
+              </a>
+              <a
+                href="#"
+                class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-primary-500 p-4 rounded-2xl"
+              >
+                <img
+                  src="../icons/contact-white.png"
+                  alt=""
+                  width="24px"
+                  height="24px"
+                />
+                <p class="text-[12px] mt-[5px] text-white">Contact</p>
+              </a>
+            </div>
+          </navbar>
+          <!-- about me -->
+          <section class="w-full h-full bg-white py-4 pl-12 pr-8 rounded-2xl">
+            <div class="flex w-[500px] items-center">
+              <h1
+                class="font-heading text-[40px] mr-8 tracking-wide font-semibold"
+              >
+                Contact
+              </h1>
+              <div
+                class="w-1/2 h-[2px] bg-gradient-to-r from-[#FE9119] to-[#ED250A]"
+              ></div>
+            </div>
+
+            <div class="flex gap-4">
+              <div class="bg-[#FFEED9] px-4 py-8 flex-1 rounded-2xl">
+                <div class="flex">
+                  <div class="mr-2">
+                    <img
+                      src="../icons/phone-icon.png"
+                      alt="phone icon"
+                      width="20px"
+                      height="20px"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-heading font-semibold mb-2">Phone:</h3>
+                    <p class="font-heading">+0820382038</p>
+                    <p class="font-heading">+0820382038</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-[#FFEED9] px-4 py-8 flex-1 rounded-2xl">
+                <div class="flex">
+                  <div class="mr-2 mt-1">
+                    <img
+                      src="../icons/email2-icon.png"
+                      alt="Email icon"
+                      width="20px"
+                      height="20px"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-heading font-semibold mb-2">Email:</h3>
+                    <p class="font-heading text-[14px] font-semibold">
+                      beatricewambuimbugua@gmail.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#F8FBFB] mt-8 px-8 py-8 rounded-2xl">
+              <p>
+                I am always open to discussing <strong>new projects, opportunities in
+                tech world, partnerships</strong> and more so <strong>mentorship</strong>.
+              </p>
+              <form class="pr-8">
+                <div class="flex flex-col mt-3">
+                  <label for="name" class="font-bold">Name:</label>
+                  <input type="text" id="name" class="bg-[#F8FBFB] border-b-2 border-slate-300 focus:outline-none"/>
+                </div>
+                <div class="flex flex-col mt-3">
+                  <label for="email" class="font-bold">Email:</label>
+                  <input type="email" id="email" class="bg-[#F8FBFB] border-b-2 border-slate-300 focus:outline-none"/>
+                </div>
+                <div class="flex flex-col mt-3">
+                  <label for="message" class="font-bold">Message:</label>
+                  <input type="text" id="message" class="bg-[#F8FBFB] border-b-2 border-slate-300 focus:outline-none"/>
+                </div>
+                <button class="rounded-3xl border-[#FD8A18] border-2 px-6 py-2 mt-8 text-[12px] font-bold">Submit</button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+@import "__variables.css";
+
+p{
+    font-family: var(--font-family-base);
+    color: var(--text-color);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-base);
+}

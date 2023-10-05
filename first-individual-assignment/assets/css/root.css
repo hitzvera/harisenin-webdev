@@ -1,0 +1,15 @@
+/* root stylesheet is for varibles declaration and global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-primary: #ff9c1a;
+  --color-secondary: #ec1b09;
+  --color-background: #f2f5f9;
+}
+body {
+  background-color: var(--color-background);
+  font-family: 'Raleway', sans-serif;
+}

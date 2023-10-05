@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              128: "32rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between px-8 py-4 shadow-md items-center">
+        <div>Health Care</div>
+        <ul class="flex gap-8 items-center">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Doctors</li>
+          <li>News</li>
+          <li>Contact</li>
+          <li>
+            <button class="bg-green-600 px-4 py-2 rounded-md text-white">
+              Make an appointment
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="flex w-full h-[32rem] bg-gray-200 bg-[url('./images/about-bg.jpg')]"
+      >
+        <div class="flex-1 ml-8">
+          <div class="flex flex-col h-full w-[75%] justify-center ml-16">
+            <h1 class="text-4xl font-bold mb-4">
+              Welcome to Your Health <br />Center
+            </h1>
+            <p class="leading-loose text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+              dolore totam suscipit nulla dicta magnam iusto in, corrupti earum
+              atque.
+            </p>
+            <p class="leading-loose mt-2 text-sm">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum
+              sit tempore eaque porro doloribus vitae accusantium provident
+              ipsum? Magnam, nam.
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                class="w-12 h-12 rounded-full mr-4"
+                src="./images/author-image.jpg"
+                alt="author image"
+              />
+              <div>
+                <h3 class="font-bold">Dr. Neil Jackson</h3>
+                <p>General Principle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1 overflow-hidden">
+        </div>
+      </section>
+      <h2 class="text-4xl font-bold my-8 pl-16">Our Doctors</h2>
+      <section class="mt-8 px-16 flex gap-8 max-md:flex-col justify-around">
+        <article class="bg-slate-50">
+          <figure>
+            <div class="max-w-64 object-cover">
+              <img
+                src="./images/team-image1.jpg"
+                alt="doctors 1"
+                class="w-72"
+              />
+            </div>
+            <div class="m-4">
+              <h3 class="font-bold text-md">Nate Baston</h3>
+              <p class="text-sm">General Principal</p>
+            </div>
+            <div class="m-4">
+              <p class="text-sm">010-020-0120</p>
+              <p class="text-sm">general@company.com</p>
+            </div>
+          </figure>
+        </article>
+        <article class="bg-slate-50">
+          <figure>
+            <div class="max-w-64 object-cover">
+              <img
+                src="./images/team-image2.jpg"
+                alt="doctors 1"
+                class="w-72"
+              />
+            </div>
+            <div class="m-4">
+              <h3 class="font-bold text-md">Jason Stewart</h3>
+              <p class="text-sm">Pregnancy</p>
+            </div>
+            <div class="m-4">
+              <p class="text-sm">010-070-0170</p>
+              <p class="text-sm">pregnancy@company.com</p>
+            </div>
+          </figure>
+        </article>
+        <article class="bg-slate-50">
+          <figure>
+            <div class="max-w-64 object-cover">
+              <img
+                src="./images/team-image3.jpg"
+                alt="doctors 1"
+                class="w-72"
+              />
+            </div>
+            <div class="m-4">
+              <h3 class="font-bold text-md">Miasha Nakahara</h3>
+              <p class="text-sm">Cardiology</p>
+            </div>
+            <div class="m-4">
+              <p class="text-sm">010-040-0140</p>
+              <p class="text-sm">cardio@company.com</p>
+            </div>
+          </figure>
+        </article>
+        <!-- <article class="bg-slate-50">
+          <figure>
+            <div class="max-w-64 object-cover">
+              <img
+                src="./images/team-image3.jpg"
+                alt="doctors 1"
+                class="w-64"
+              />
+            </div>
+            <div class="m-4">
+              <h3 class="font-bold text-md">Miasha Nakahara</h3>
+              <p class="text-sm">Cardiology</p>
+            </div>
+            <div class="m-4">
+              <p class="text-sm">010-040-0140</p>
+              <p class="text-sm">cardio@company.com</p>
+            </div>
+          </figure>
+        </article>
+        <article class="bg-slate-50">
+          <figure>
+            <div class="max-w-64 object-cover">
+              <img
+                src="./images/team-image3.jpg"
+                alt="doctors 1"
+                class="w-64"
+              />
+            </div>
+            <div class="m-4">
+              <h3 class="font-bold text-md">Miasha Nakahara</h3>
+              <p class="text-sm">Cardiology</p>
+            </div>
+            <div class="m-4">
+              <p class="text-sm">010-040-0140</p>
+              <p class="text-sm">cardio@company.com</p>
+            </div>
+          </figure>
+        </article> -->
+      </section>
+
+      <section class="w-full h-[32rem] p-16 flex justify-center">
+        <div>
+          <img
+            class="pr-32"
+            src="./images/appointment-image.jpg"
+            alt="appointment"
+            width="500px"
+            height="500px"
+          />
+        </div>
+        <div>
+          <h1 class="text-4xl font-bold">Make an appointment</h1>
+          <form action="" class="mt-8">
+            <div class="flex">
+              <div class="flex flex-col gap-2">
+                <label for="name" class="font-semibold">Name</label>
+                <input type="text" id="name" placeholder="Full Name" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="name" class="font-semibold">Email</label>
+                <input type="email" id="name" placeholder="Your Email" />
+              </div>
+            </div>
+            <div class="flex mt-4">
+              <div class="flex flex-col gap-2">
+                <label for="name" class="font-semibold">Select Date</label>
+                <input type="date" id="name" placeholder="Full Name" />
+              </div>
+              <div class="flex flex-col gap-2 ml-12">
+                <label for="name" class="font-semibold"
+                  >Select Department</label
+                >
+                <input type="email" id="name" placeholder="General Health" />
+              </div>
+            </div>
+            <div class="flex flex-col gap-2 mt-4">
+              <label for="name" class="font-semibold">Phone Number</label>
+              <input type="email" id="name" placeholder="Phone Number" />
+            </div>
+            <div class="flex flex-col gap-2 mt-4">
+              <label for="name" class="font-semibold">Additional Message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Additional Message"
+              ></textarea>
+            </div>
+
+            <button
+              class="w-full bg-green-500 text-white py-2 rounded-md mt-8"
+              type="submit"
+            >
+              Submit Button
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

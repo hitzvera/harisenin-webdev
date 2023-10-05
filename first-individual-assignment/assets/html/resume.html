@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Google Fonts - Poppins, Raleway, and Pacifico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Pacifico&family=Poppins:wght@400;500;600;700&family=Quicksand:wght@500;700&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="../css/tailwind.css" />
+    <!-- root css starter -->
+    <link rel="stylesheet" href="../css/root.css" />
+  </head>
+  <body>
+    <main class="w-max-[1240px] my-0 mx-auto w-[1240px] h-full">
+      <!-- this one is for the logo -->
+      <section class="py-[22px]">
+        <h1 class="text-[24px]">
+          <span class="font-custom text-secondary">My</span
+          ><span class="font-custom text-primary-400">Portofolio</span>
+        </h1>
+      </section>
+      <!-- this one is the main content -->
+      <!-- container of the content -->
+      <section class="w-[1240px] flex h-full">
+        <!-- section 1 for the left side -->
+        <aside class="flex">
+          <div
+            class="bg-white h-full w-[400px] flex flex-col items-center pt-10 px-2 rounded-md shadow-sm"
+          >
+            <img
+              src="../images/profile-picture.png"
+              alt="profile picture"
+              width="200px"
+              height="200px"
+            />
+            <h2 class="font-bold text-[28px] py-2">Beatrice Wambui</h2>
+            <p class="text-slate-400">Fullstack Developer</p>
+            <!-- list of socials -->
+            <div class="flex gap-[18px] py-4">
+              <div
+                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              >
+                <img src="../icons/facebook-icon.png" alt="facebook icon" />
+              </div>
+              <div
+                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              >
+                <img src="../icons/linkedin-icon.png" alt="linkedin icon" />
+              </div>
+              <div
+                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              >
+                <img src="../icons/twitter-icon.png" alt="twitter icon" />
+              </div>
+              <div
+                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              >
+                <img src="../icons/github-icon.png" alt="github icon" />
+              </div>
+            </div>
+
+            <!-- phone, email and location -->
+            <div class="bg-background w-4.5/5 rounded-md px-4 mb-8">
+              <div class="flex py-6 border-b-2">
+                <div class="px-4 flex justify-center items-center">
+                  <img src="../icons/mobile-icon.png" alt="mobile icon" />
+                </div>
+                <div>
+                  <p
+                    class="leading-snug text-[14px] font-semibold text-slate-500"
+                  >
+                    Phone
+                  </p>
+                  <p class="leading-snug text-[14px] font-bold">
+                    +254723909353
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="flex py-6 border-b-2">
+                <div class="px-4 flex justify-center items-center">
+                  <img src="../icons/email1-icon.png" alt="mobile icon" />
+                </div>
+                <div>
+                  <p
+                    class="leading-snug text-[14px] font-semibold text-slate-500"
+                  >
+                    Email
+                  </p>
+                  <p
+                    class="leading-snug text-[14px] font-bold flex-nowrap overflow-hidden text-ellipsis"
+                  >
+                    beatricewambuimbugua@gmail.com
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="flex py-6 border-b-2">
+                <div class="px-4 flex justify-center items-center">
+                  <img src="../icons/location-icon.png" alt="Email icon" />
+                </div>
+                <div>
+                  <p
+                    class="leading-snug text-[14px] font-semibold text-slate-500"
+                  >
+                    Location
+                  </p>
+                  <p class="leading-snug text-[14px] font-bold">
+                    Nairobi, Kenya
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <button
+                class="bg-primary-500 text-white py-3 px-4 rounded-full flex justify-center items-center mx-auto mt-4 mb-6"
+              >
+                <img src="../icons/download.png" alt="download icon" />
+                <span class="text-[12px] ml-2">Download Resume</span>
+              </button>
+            </div>
+          </div>
+        </aside>
+        <div class="w-full h-full ml-4 shadow-sm rounded-md pt-8">
+          <!-- navbar -->
+          <navbar class="flex justify-end mb-2 mr-16">
+            <div class="border-2 rounded-xl py-2 px-24 flex gap-8 shadow-sm">
+              <a
+                href="../../index.html"
+                class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-[#E1E8EF] p-4 rounded-2xl"
+              >
+                <img
+                  src="../icons/home-black.png"
+                  alt=""
+                  width="24px"
+                  height="24px"
+                />
+                <p class="text-[12px] mt-[5px]">Home</p>
+              </a>
+              <a
+                href="#"
+                class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-primary-500 p-4 rounded-2xl"
+              >
+                <img
+                  src="../icons/resume-white.png"
+                  alt=""
+                  width="24px"
+                  height="24px"
+                />
+                <p class="text-[12px] mt-[5px] text-white">Resume</p>
+              </a>
+              <a
+                href="./contact.html"
+                class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-[#E1E8EF] p-4 rounded-2xl"
+              >
+                <img
+                  src="../icons/contact-black.png"
+                  alt=""
+                  width="24px"
+                  height="24px"
+                />
+                <p class="text-[12px] mt-[5px]">Contact</p>
+              </a>
+            </div>
+          </navbar>
+          <!-- Resume -->
+          <section class="w-full bg-white py-4 pl-12 pr-8 rounded-2xl">
+            <div class="flex w-[500px] items-center">
+              <h1
+                class="font-heading text-[40px] mr-8 tracking-wide font-semibold"
+              >
+                Resume
+              </h1>
+              <div
+                class="w-1/2 h-[2px] bg-gradient-to-r from-[#FE9119] to-[#ED250A]"
+              ></div>
+            </div>
+            <!-- Educatuion and experience -->
+            <div class="flex w-full" style="width: 100%">
+              <div class="flex-1 w-full">
+                <div
+                  class="border-4 flex items-center"
+                  style="margin: 16px 0 24px 0"
+                >
+                  <img
+                    src="../icons/education-icon.png"
+                    alt="education icon"
+                    width="27px"
+                    height="27px"
+                  />
+                  <h2 class="font-semibold font-heading text-[28px] ml-3">
+                    Education
+                  </h2>
+                </div>
+                <div
+                  class="p-8 rounded-xl"
+                  style="
+                    background-color: #ffe3bf;
+                    margin: 16px 64px 28px 0;
+                    padding: 16px 10px;
+                  "
+                >
+                  <p class="text-slate-300">2020-2021</p>
+                  <p class="font-bold" style="margin: 6px 0">
+                    Software Development
+                  </p>
+                  <p class="font-semibold">Moringa School</p>
+                </div>
+                <div
+                  class="p-8 m-16 rounded-xl"
+                  style="
+                    background-color: #ffe3bf;
+                    margin: 16px 64px 28px 0;
+                    padding: 16px 10px;
+                  "
+                >
+                  <p class="text-slate-300">2020-2021</p>
+                  <p class="font-bold" style="margin: 6px 0">
+                    Software Development
+                  </p>
+                  <p class="font-semibold">Moringa School</p>
+                </div>
+              </div>
+              <div class="flex-1 w-full">
+                <div
+                  class="border-4 flex items-center"
+                  style="margin: 16px 0 24px 0"
+                >
+                  <img
+                    src="../icons/experience-icon.png"
+                    alt="experience icon"
+                    width="27px"
+                    height="27px"
+                  />
+                  <h2 class="font-semibold font-heading text-[28px] ml-3">
+                    Experience
+                  </h2>
+                </div>
+                <div
+                  class="p-8 rounded-xl"
+                  style="
+                    background-color: #ffe3bf;
+                    margin: 16px 64px 28px 0;
+                    padding: 16px 10px;
+                  "
+                >
+                  <p class="text-slate-300">2020-2021</p>
+                  <p class="font-bold" style="margin: 6px 0">
+                    Software Development
+                  </p>
+                  <p class="font-semibold">Moringa School</p>
+                </div>
+                <div
+                  class="p-8 rounded-xl"
+                  style="
+                    background-color: #ffe3bf;
+                    margin: 16px 64px 28px 0;
+                    padding: 16px 10px;
+                  "
+                >
+                  <p class="text-slate-300">2020-2021</p>
+                  <p class="font-bold" style="margin: 6px 0">
+                    Software Development
+                  </p>
+                  <p class="font-semibold">Moringa School</p>
+                </div>
+              </div>
+            </div>
+            <!-- work skills and soft skills -->
+            <div class="flex w-full" style="width: 100%">
+              <div class="flex-1 w-full" style="padding: 0px 24px 0px 0">
+                <h2 class="font-semibold font-heading text-[28px]">
+                  Work Skills
+                </h2>
+                <div
+                  class="flex flex-wrap"
+                  style="flex-wrap: wrap; row-gap: 12px"
+                >
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    Nextjs
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    React.js
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    HTML 5
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    CSS 3
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    Tailwind CSS
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    Figma
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    Javascript
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    MongoDB
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    SQL
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1 w-full" style="padding: 0px 24px 0px 0">
+                <h2 class="font-semibold font-heading text-[28px]">
+                  Work Skills
+                </h2>
+                <div
+                  class="flex flex-wrap"
+                  style="flex-wrap: wrap; row-gap: 12px"
+                >
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    Nextjs
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    React.js
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    HTML 5
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    CSS 3
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    Tailwind CSS
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    Figma
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    Javascript
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    MongoDB
+                  </div>
+                  <div
+                    class="rounded-md"
+                    style="
+                      margin-right: 2rem;
+                      background-color: #e1e8ef;
+                      padding: 8px 8px;
+                    "
+                  >
+                    SQL
+                  </div>
+     
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <h2></h2>
+  </body>
+</html>
