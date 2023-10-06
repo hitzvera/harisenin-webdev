@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Resume Mujahid Ansori Majid</title>
-    <link
-      rel="icon"
-      href="./assets/icons/code-icon.png"
-      type="image/x-icon"
-    />
+    <title>Resume Mujahid Ansori Majid</title>
+    <link rel="icon" href="../icons/code-icon.png" type="image/x-icon" />
 
     <!-- Google Fonts - Poppins, Raleway, and Pacifico -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,9 +21,7 @@
     <link rel="stylesheet" href="../css/root.css" />
   </head>
   <body>
-    <main
-      class="max-w-[1240px] min-w-[555px] my-0 mx-auto h-full"
-    >
+    <main class="max-w-[1240px] my-0 mx-auto h-full">
       <!-- this one is for the logo -->
       <section class="py-[22px]">
         <h1 class="text-[32px] xl:text-[24px] text-center xl:text-start">
@@ -63,20 +57,14 @@
                 target="_blank"
                 class="bg-background w-[100px] h-[100px] xl:w-[60px] xl:h-[60px] flex justify-center items-center rounded-md"
               >
-                <img
-                  src="../icons/facebook-icon.png"
-                  alt="facebook icon"
-                />
+                <img src="../icons/facebook-icon.png" alt="facebook icon" />
               </a>
               <a
                 href="https://www.linkedin.com/in/mujahidansori/"
                 target="_blank"
                 class="bg-background w-[100px] h-[100px] xl:w-[60px] xl:h-[60px] flex justify-center items-center rounded-md"
               >
-                <img
-                  src="../icons/linkedin-icon.png"
-                  alt="linkedin icon"
-                />
+                <img src="../icons/linkedin-icon.png" alt="linkedin icon" />
               </a>
               <a
                 href="https://twitter.com/MujaHead88"
@@ -134,10 +122,7 @@
               </div>
               <div class="flex py-6 border-b-2">
                 <div class="px-4 flex justify-center items-center">
-                  <img
-                    src="../icons/location-icon.png"
-                    alt="Email icon"
-                  />
+                  <img src="../icons/location-icon.png" alt="Email icon" />
                 </div>
                 <div>
                   <p
@@ -164,7 +149,7 @@
         </aside>
         <div class="w-full h-full xl:ml-4 shadow-sm rounded-md pt-8">
           <!-- navbar -->
-          <navbar class="flex xl:justify-end mb-2 xl:mr-16 justify-center">
+          <nav class="hidden md:flex xl:justify-end mb-2 xl:mr-16 justify-center">
             <div class="border-2 rounded-xl py-2 px-24 flex gap-8 shadow-sm">
               <a
                 href="../../index.html"
@@ -203,9 +188,9 @@
                 <p class="text-[12px] mt-[5px] text-white font-bold">Contact</p>
               </a>
             </div>
-          </navbar>
+          </nav>
           <!-- about me -->
-          <section class="w-full h-full bg-white py-4 pl-12 pr-8 rounded-2xl">
+          <section class="w-full h-full bg-white py-4 md:pl-12 md:pr-8 pl-4 pr-2 rounded-2xl">
             <div
               class="flex xl:w-[500px] xl:items-center justify-center xl:justify-start"
             >
@@ -257,7 +242,7 @@
               </div>
             </div>
 
-            <div class="bg-[#F8FBFB] mt-8 px-8 py-8 rounded-2xl">
+            <div class="bg-[#F8FBFB] mt-2 px-4 py-4 md:mt-8 md:px-8 md:py-8 rounded-2xl">
               <p>
                 I am always open to discussing
                 <strong
@@ -302,7 +287,59 @@
         </div>
       </section>
     </main>
+    <nav class="sticky bottom-0 w-full mt-4 md:hidden">
+      <div class="flex">
+        <div class="flex-1">
+          <a
+            href="../../index.html"
+            class="text-center flex flex-col justify-center items-center bg-[#E1E8EF] py-2"
+          >
+            <div class="h-[24px]">
+              <img
+                src="../icons/home-black.png"
+                alt=""
+                width="24px"
+                height="24px"
+              />
+            </div>
 
-    <h2></h2>
+            <p class="text-[12px] mt-[5px] font-bold">Home</p>
+          </a>
+        </div>
+        <div class="flex-1">
+          <a
+            href="../html/resume.html"
+            class="text-center flex flex-col justify-center items-center bg-[#E1E8EF] py-2"
+          >
+            <div class="h-[24px]">
+              <img
+                src="../icons/resume-black.png"
+                alt=""
+                width="24px"
+                height="24px"
+              />
+            </div>
+
+            <p class="text-[12px] mt-[5px] font-bold">Resume</p>
+          </a>
+        </div>
+        <div class="flex-1">
+          <a
+            href="../html/contact.html"
+            class="text-center flex flex-col justify-center items-center bg-primary-500 py-2"
+          >
+            <div class="h-[24px]">
+              <img
+                src="../icons/contact-white.png"
+                alt=""
+                width="24px"
+                height="24px"
+              />
+            </div>
+            <p class="text-[12px] mt-[5px] font-bold text-white">Contact</p>
+          </a>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Mujahid Ansori Majid</title>
-    <link rel="icon" href="./assets/icons/code-icon.png" type="image/x-icon" />
+    <link rel="icon" href="../icons/code-icon.png" type="image/x-icon" />
 
     <!-- Google Fonts - Poppins, Raleway, and Pacifico -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../css/root.css" />
   </head>
   <body>
-    <main class="max-w-[1240px] min-w-[555px] my-0 mx-auto h-full">
+    <main class="max-w-[1240px] my-0 mx-auto h-full">
       <!-- this one is for the logo -->
       <section class="py-[22px]">
         <h1 class="text-[32px] xl:text-[24px] text-center xl:text-start">
@@ -149,7 +149,9 @@
         </aside>
         <div class="w-full h-full xl:ml-4 shadow-sm rounded-md pt-8">
           <!-- navbar -->
-          <navbar class="flex xl:justify-end mb-2 xl:mr-16 justify-center">
+          <navbar
+            class="hidden md:flex xl:justify-end mb-2 xl:mr-16 justify-center"
+          >
             <div class="border-2 rounded-xl py-2 px-24 flex gap-8 shadow-sm">
               <a
                 href="../../index.html"
@@ -190,7 +192,9 @@
             </div>
           </navbar>
           <!-- Resume -->
-          <section class="w-full bg-white py-4 pl-12 pr-8 rounded-2xl">
+          <section
+            class="w-full bg-white py-4 pl-4 md:pl-12 md:pr-8 rounded-2xl"
+          >
             <div
               class="flex xl:w-[500px] xl:items-center justify-center xl:justify-start"
             >
@@ -206,7 +210,7 @@
             <!-- Educatuion and experience -->
             <div class="flex w-full flex-col lg:flex-row">
               <div class="flex-1 w-full">
-                <div class="flex items-center" style="margin: 16px 0 24px 0">
+                <div class="flex items-center mt-[16px] mb-2 md:mb-[24px]">
                   <img
                     src="../icons/education-icon.png"
                     alt="education icon"
@@ -218,14 +222,14 @@
                   </h2>
                 </div>
                 <div
-                  class="py-4 px-[10px] rounded-xl bg-[#ffe3bf] mt-[16px] mr-[64px] mb-[28px]"
+                  class="py-4 px-[10px] rounded-xl bg-[#ffe3bf] mr-4 mb-4 md:mt-[16px] md:mr-[64px] md:mb-[28px] "
                 >
                   <p class="text-slate-500">2019 - 2023</p>
                   <p class="font-bold my-[6px]">Informatics Engineering</p>
                   <p class="font-semibold">UIN SGD Bandung</p>
                 </div>
                 <div
-                  class="py-4 px-[10px] rounded-xl bg-[#ffe3bf] mt-[16px] mr-[64px] mb-[28px]"
+                  class="py-4 px-[10px] rounded-xl bg-[#ffe3bf] mr-4 mb-4 md:mt-[16px] md:mr-[64px] md:mb-[28px]"
                 >
                   <p class="text-slate-500">2016 - 2019</p>
                   <p class="font-bold my-[6px]">Science</p>
@@ -233,7 +237,7 @@
                 </div>
               </div>
               <div class="flex-1 w-full">
-                <div class="flex items-center" style="margin: 16px 0 24px 0">
+                <div class="flex items-center mt-[16px] mb-2 md:mb-[24px]">
                   <img
                     src="../icons/experience-icon.png"
                     alt="experience icon"
@@ -245,14 +249,14 @@
                   </h2>
                 </div>
                 <div
-                  class="py-4 px-[10px] rounded-xl bg-[#ffe3bf] mt-[16px] mr-[64px] mb-[28px]"
+                  class="py-4 px-[10px] rounded-xl bg-[#ffe3bf] mr-4 mb-4 md:mt-[16px] md:mr-[64px] md:mb-[28px]"
                 >
                   <p class="text-slate-500">2022-2023</p>
                   <p class="font-bold my-[6px]">Fullstack Developer</p>
                   <p class="font-semibold">Kementerian Agama Pusat</p>
                 </div>
                 <div
-                  class="py-4 px-[10px] rounded-xl bg-[#ffe3bf] mt-[16px] mr-[64px] mb-[28px]"
+                  class="py-4 px-[10px] rounded-xl bg-[#ffe3bf] mr-4 mb-4 md:mt-[16px] md:mr-[64px] md:mb-[28px]"
                 >
                   <p class="text-slate-500">2022</p>
                   <p class="font-bold my-[6px]">Android Native Developer</p>
@@ -326,7 +330,59 @@
         </div>
       </section>
     </main>
+    <nav class="sticky bottom-0 w-full my-4 md:hidden">
+      <div class="flex">
+        <div class="flex-1">
+          <a
+            href="../../index.html"
+            class="text-center flex flex-col justify-center items-center bg-[#E1E8EF] py-2"
+          >
+            <div class="h-[24px]">
+              <img
+                src="../icons/home-black.png"
+                alt=""
+                width="24px"
+                height="24px"
+              />
+            </div>
 
-    <h2></h2>
+            <p class="text-[12px] mt-[5px] font-bold">Home</p>
+          </a>
+        </div>
+        <div class="flex-1">
+          <a
+            href="#"
+            class="text-center flex flex-col justify-center items-center bg-primary-500 py-2"
+          >
+            <div class="h-[24px]">
+              <img
+                src="../icons/resume-white.png"
+                alt=""
+                width="24px"
+                height="24px"
+              />
+            </div>
+
+            <p class="text-[12px] mt-[5px] font-bold text-white">Resume</p>
+          </a>
+        </div>
+        <div class="flex-1">
+          <a
+            href="./contact.html"
+            class="text-center flex flex-col justify-center items-center bg-[#E1E8EF] py-2"
+          >
+            <div class="h-[24px]">
+              <img
+                src="../icons/contact-black.png"
+                alt=""
+                width="24px"
+                height="24px"
+              />
+            </div>
+            <p class="text-[12px] mt-[5px] font-bold">Contact</p>
+          </a>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
