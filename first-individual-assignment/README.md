@@ -6,7 +6,7 @@ the assignment is slicing the design into usable web page. hopefully student can
 
 ## deployment result
 
-[Mujahid - First Assignment](https://mujahid-test-host.online/first-individual-assignment/)
+[Click to see result of 1st assignment](https://mujahid-test-host.online/first-individual-assignment/)
 
 ## design
 
