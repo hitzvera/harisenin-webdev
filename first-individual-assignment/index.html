@@ -14,67 +14,75 @@
     />
 
     <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/css/tailwind.css" />
     <!-- root css starter -->
     <link rel="stylesheet" href="./assets/css/root.css" />
   </head>
   <body>
-    <main class="w-max-[1240px] my-0 mx-auto h-full">
+    <main class="max-w-[1240px] min-w-[555px] my-0 mx-auto h-full">
       <!-- this one is for the logo -->
       <section class="py-[22px]">
-        <h1 class="text-[24px]">
+        <h1 class="text-[32px] xl:text-[24px] text-center xl:text-start">
           <span class="font-custom text-secondary">My</span
           ><span class="font-custom text-primary-400">Portofolio</span>
         </h1>
       </section>
       <!-- this one is the main content -->
       <!-- container of the content -->
-      <section class="w-[1240px] flex h-full lg:flex-row flex-col">
+      <section class="flex h-full flex-col xl:flex-row">
         <!-- section 1 for the left side -->
         <aside class="flex">
           <div
-            class="bg-white h-full w-[400px] flex flex-col items-center pt-10 px-2 rounded-md shadow-sm"
+            class="bg-white h-full pt-10 px-2 rounded-md shadow-sm w-full xl:w-[400px] flex flex-col items-center"
           >
-            <img
-              src="./assets/images/profile-picture.png"
-              alt="profile picture"
-              width="200px"
-              height="200px"
-            />
-            <h2 class="font-bold text-[28px] py-2">Beatrice Wambui</h2>
+            <div class="w-[200px] h-[200px] overflow-hidden rounded-2xl">
+              <img
+                src="./assets/images/formal-selfpotrait.jpg"
+                alt="profile picture"
+                width="200px"
+                height="200px"
+              />
+            </div>
+
+            <h2 class="font-bold text-[28px] py-2">Mujahid Ansori Majid</h2>
             <p class="text-slate-400">Fullstack Developer</p>
             <!-- list of socials -->
-            <div class="flex gap-[18px] py-4">
-              <div
-                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+            <div
+              class="flex gap-[18px] py-4 w-full justify-center mb-4 xl:mb-0"
+            >
+              <a
+                href="https://www.facebook.com/mujahid.a.majid" target="_blank" class="bg-background w-[100px] h-[100px] xl:w-[60px] xl:h-[60px] flex justify-center items-center rounded-md"
               >
                 <img
                   src="./assets/icons/facebook-icon.png"
                   alt="facebook icon"
                 />
-              </div>
-              <div
-                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mujahidansori/" target="_blank" class="bg-background w-[100px] h-[100px] xl:w-[60px] xl:h-[60px] flex justify-center items-center rounded-md"
               >
                 <img
                   src="./assets/icons/linkedin-icon.png"
                   alt="linkedin icon"
                 />
-              </div>
-              <div
-                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              </a>
+              <a
+                href="https://twitter.com/MujaHead88" target="_blank" class="bg-background w-[100px] h-[100px] xl:w-[60px] xl:h-[60px] flex justify-center items-center rounded-md"
               >
                 <img src="./assets/icons/twitter-icon.png" alt="twitter icon" />
-              </div>
-              <div
-                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              </a>
+              <a
+                href="https://github.com/hitzvera" target="_blank" class="bg-background w-[100px] h-[100px] xl:w-[60px] xl:h-[60px] flex justify-center items-center rounded-md"
               >
                 <img src="./assets/icons/github-icon.png" alt="github icon" />
-              </div>
+              </a>
             </div>
 
             <!-- phone, email and location -->
-            <div class="bg-background w-4.5/5 rounded-md px-4 mb-8">
+            <div
+              class="bg-background xl:w-[90%] w-full md:w-4/5 rounded-md px-4 mb-8"
+            >
               <div class="flex py-6 border-b-2">
                 <div class="px-4 flex justify-center items-center">
                   <img src="./assets/icons/mobile-icon.png" alt="mobile icon" />
@@ -86,7 +94,7 @@
                     Phone
                   </p>
                   <p class="leading-snug text-[14px] font-bold">
-                    +254723909353
+                    +6281286524358
                   </p>
                 </div>
                 <hr />
@@ -104,7 +112,7 @@
                   <p
                     class="leading-snug text-[14px] font-bold flex-nowrap overflow-hidden text-ellipsis"
                   >
-                    beatricewambuimbugua@gmail.com
+                    mujahid.ansori.dev@gmail.com
                   </p>
                 </div>
                 <hr />
@@ -123,26 +131,27 @@
                     Location
                   </p>
                   <p class="leading-snug text-[14px] font-bold">
-                    Nairobi, Kenya
+                    Bandung, Indonesia
                   </p>
                 </div>
                 <hr />
               </div>
-              <button
-                class="bg-primary-500 text-white py-3 px-4 rounded-full flex justify-center items-center mx-auto mt-4 mb-6"
+              <a
+                href="./assets/files/CV-ATS-Junior-Developer.pdf" download="CV-Mujahid Ansori Majid" class="bg-primary-500 text-white py-3 px-4 rounded-full flex justify-center items-center mx-auto mt-4 mb-6 w-fit"
               >
                 <img src="./assets/icons/download.png" alt="download icon" />
                 <span class="text-[12px] ml-2">Download Resume</span>
-              </button>
+              </a>
             </div>
           </div>
         </aside>
-        <div class="w-full h-full ml-4 shadow-sm rounded-md pt-8">
+        <div class="w-full h-full xl:ml-4 shadow-sm rounded-md pt-8">
           <!-- navbar -->
-          <navbar class="flex justify-end mb-2 mr-16">
+          <navbar class="flex xl:justify-end mb-2 xl:mr-16 justify-center">
             <div class="border-2 rounded-xl py-2 px-24 flex gap-8 shadow-sm">
               <a
-                href="./index.html" class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-primary-500 p-4 rounded-2xl"
+                href="./index.html"
+                class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-primary-500 p-4 rounded-2xl"
               >
                 <img
                   src="./assets/icons/home-white.png"
@@ -150,10 +159,11 @@
                   width="24px"
                   height="24px"
                 />
-                <p class="text-[12px] mt-[5px] text-white">Home</p>
+                <p class="text-[12px] mt-[5px] text-white font-bold">Home</p>
               </a>
               <a
-                href="./assets/html/resume.html" class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-[#E1E8EF] p-4 rounded-2xl"
+                href="./assets/html/resume.html"
+                class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-[#E1E8EF] p-4 rounded-2xl"
               >
                 <img
                   src="./assets/icons/resume-black.png"
@@ -161,10 +171,11 @@
                   width="24px"
                   height="24px"
                 />
-                <p class="text-[12px] mt-[5px]">Resume</p>
+                <p class="text-[12px] mt-[5px] font-bold">Resume</p>
               </a>
               <a
-                href="./assets/html/contact.html" class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-[#E1E8EF] p-4 rounded-2xl"
+                href="./assets/html/contact.html"
+                class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-[#E1E8EF] p-4 rounded-2xl"
               >
                 <img
                   src="./assets/icons/contact-black.png"
@@ -172,23 +183,25 @@
                   width="24px"
                   height="24px"
                 />
-                <p class="text-[12px] mt-[5px]">Contact</p>
+                <p class="text-[12px] mt-[5px] font-bold">Contact</p>
               </a>
             </div>
           </navbar>
           <!-- about me -->
           <section class="w-full h-full bg-white py-4 pl-12 pr-8 rounded-2xl">
-            <div class="flex w-[500px] items-center">
+            <div
+              class="flex xl:w-[500px] xl:items-center justify-center xl:justify-start"
+            >
               <h1
                 class="font-heading text-[40px] mr-8 tracking-wide font-semibold"
               >
                 ABOUT ME
               </h1>
               <div
-                class="w-1/2 h-[2px] bg-gradient-to-r from-[#FE9119] to-[#ED250A]"
+                class="xl:w-1/2 xl:h-[2px] xl:bg-gradient-to-r from-[#FE9119] to-[#ED250A]"
               ></div>
             </div>
-            <p class="leading-relaxed">
+            <p class="leading-relaxed text-justify">
               Hello there! I'm thrilled to welcome you to my portfolio. I am a
               passionate and versatile full-stack developer with a keen interest
               in exploring the latest cutting-edge technologies. My journey in
@@ -196,10 +209,12 @@
               exhilarating, and I constantly strive to enhance my skills and
               embrace emerging trends in the industry.
             </p>
-            <h2 class="my-6 font-semibold font-heading text-[32px]">
+            <h2
+              class="my-6 font-semibold font-heading text-[32px] xl:text-start text-center"
+            >
               What I do!
             </h2>
-            <div class="grid grid-rows-2 grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-4">
               <div class="bg-[#FFEBD1] py-4 px-6 rounded-2xl shadow-sm">
                 <div class="flex items-center">
                   <img src="./assets/icons/code-icon.png" alt="code icon" />

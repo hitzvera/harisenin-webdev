@@ -13,63 +13,86 @@
       rel="stylesheet"
     />
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../css/tailwind.css" />
     <!-- root css starter -->
     <link rel="stylesheet" href="../css/root.css" />
   </head>
   <body>
-    <main class="w-max-[1240px] my-0 mx-auto w-[1240px] h-full">
+    <main
+      class="max-w-[1240px] min-w-[555px] my-0 mx-auto h-full"
+    >
       <!-- this one is for the logo -->
       <section class="py-[22px]">
-        <h1 class="text-[24px]">
+        <h1 class="text-[32px] xl:text-[24px] text-center xl:text-start">
           <span class="font-custom text-secondary">My</span
           ><span class="font-custom text-primary-400">Portofolio</span>
         </h1>
       </section>
       <!-- this one is the main content -->
       <!-- container of the content -->
-      <section class="w-[1240px] flex h-full">
+      <section class="flex h-full flex-col xl:flex-row">
         <!-- section 1 for the left side -->
         <aside class="flex">
           <div
-            class="bg-white h-full w-[400px] flex flex-col items-center pt-10 px-2 rounded-md shadow-sm"
+            class="bg-white h-full pt-10 px-2 rounded-md shadow-sm w-full xl:w-[400px] flex flex-col items-center"
           >
-            <img
-              src="../images/profile-picture.png"
-              alt="profile picture"
-              width="200px"
-              height="200px"
-            />
-            <h2 class="font-bold text-[28px] py-2">Beatrice Wambui</h2>
+            <div class="w-[200px] h-[200px] overflow-hidden rounded-2xl">
+              <img
+                src="../images/formal-selfpotrait.jpg"
+                alt="profile picture"
+                width="200px"
+                height="200px"
+              />
+            </div>
+
+            <h2 class="font-bold text-[28px] py-2">Mujahid Ansori Majid</h2>
             <p class="text-slate-400">Fullstack Developer</p>
             <!-- list of socials -->
-            <div class="flex gap-[18px] py-4">
-              <div
-                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+            <div
+              class="flex gap-[18px] py-4 w-full justify-center mb-4 xl:mb-0"
+            >
+              <a
+                href="https://www.facebook.com/mujahid.a.majid"
+                target="_blank"
+                class="bg-background w-[100px] h-[100px] xl:w-[60px] xl:h-[60px] flex justify-center items-center rounded-md"
               >
-                <img src="../icons/facebook-icon.png" alt="facebook icon" />
-              </div>
-              <div
-                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+                <img
+                  src="../icons/facebook-icon.png"
+                  alt="facebook icon"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mujahidansori/"
+                target="_blank"
+                class="bg-background w-[100px] h-[100px] xl:w-[60px] xl:h-[60px] flex justify-center items-center rounded-md"
               >
-                <img src="../icons/linkedin-icon.png" alt="linkedin icon" />
-              </div>
-              <div
-                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+                <img
+                  src="../icons/linkedin-icon.png"
+                  alt="linkedin icon"
+                />
+              </a>
+              <a
+                href="https://twitter.com/MujaHead88"
+                target="_blank"
+                class="bg-background w-[100px] h-[100px] xl:w-[60px] xl:h-[60px] flex justify-center items-center rounded-md"
               >
                 <img src="../icons/twitter-icon.png" alt="twitter icon" />
-              </div>
-              <div
-                class="bg-background w-[60px] h-[60px] flex justify-center items-center rounded-md"
+              </a>
+              <a
+                href="https://github.com/hitzvera"
+                target="_blank"
+                class="bg-background w-[100px] h-[100px] xl:w-[60px] xl:h-[60px] flex justify-center items-center rounded-md"
               >
                 <img src="../icons/github-icon.png" alt="github icon" />
-              </div>
+              </a>
             </div>
 
             <!-- phone, email and location -->
-            <div class="bg-background w-4.5/5 rounded-md px-4 mb-8">
+            <div
+              class="bg-background xl:w-[90%] w-full md:w-4/5 rounded-md px-4 mb-8"
+            >
               <div class="flex py-6 border-b-2">
                 <div class="px-4 flex justify-center items-center">
                   <img src="../icons/mobile-icon.png" alt="mobile icon" />
@@ -81,7 +104,7 @@
                     Phone
                   </p>
                   <p class="leading-snug text-[14px] font-bold">
-                    +254723909353
+                    +6281286524358
                   </p>
                 </div>
                 <hr />
@@ -99,14 +122,17 @@
                   <p
                     class="leading-snug text-[14px] font-bold flex-nowrap overflow-hidden text-ellipsis"
                   >
-                    beatricewambuimbugua@gmail.com
+                    mujahid.ansori.dev@gmail.com
                   </p>
                 </div>
                 <hr />
               </div>
               <div class="flex py-6 border-b-2">
                 <div class="px-4 flex justify-center items-center">
-                  <img src="../icons/location-icon.png" alt="Email icon" />
+                  <img
+                    src="../icons/location-icon.png"
+                    alt="Email icon"
+                  />
                 </div>
                 <div>
                   <p
@@ -115,23 +141,25 @@
                     Location
                   </p>
                   <p class="leading-snug text-[14px] font-bold">
-                    Nairobi, Kenya
+                    Bandung, Indonesia
                   </p>
                 </div>
                 <hr />
               </div>
-              <button
-                class="bg-primary-500 text-white py-3 px-4 rounded-full flex justify-center items-center mx-auto mt-4 mb-6"
+              <a
+                href="../files/CV-ATS-Junior-Developer.pdf"
+                download="CV-Mujahid Ansori Majid"
+                class="bg-primary-500 text-white py-3 px-4 rounded-full flex justify-center items-center mx-auto mt-4 mb-6 w-fit"
               >
                 <img src="../icons/download.png" alt="download icon" />
                 <span class="text-[12px] ml-2">Download Resume</span>
-              </button>
+              </a>
             </div>
           </div>
         </aside>
-        <div class="w-full h-full ml-4 shadow-sm rounded-md pt-8">
+        <div class="w-full h-full xl:ml-4 shadow-sm rounded-md pt-8">
           <!-- navbar -->
-          <navbar class="flex justify-end mb-2 mr-16">
+          <navbar class="flex xl:justify-end mb-2 xl:mr-16 justify-center">
             <div class="border-2 rounded-xl py-2 px-24 flex gap-8 shadow-sm">
               <a
                 href="../../index.html"
@@ -143,10 +171,10 @@
                   width="24px"
                   height="24px"
                 />
-                <p class="text-[12px] mt-[5px]">Home</p>
+                <p class="text-[12px] mt-[5px] font-bold">Home</p>
               </a>
               <a
-                href="./resume.html"
+                href="../html/resume.html"
                 class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-[#E1E8EF] p-4 rounded-2xl"
               >
                 <img
@@ -155,10 +183,10 @@
                   width="24px"
                   height="24px"
                 />
-                <p class="text-[12px] mt-[5px]">Resume</p>
+                <p class="text-[12px] mt-[5px] font-bold">Resume</p>
               </a>
               <a
-                href="#"
+                href="../html/contact.html"
                 class="w-[80px] h-[80px] text-center flex flex-col justify-center items-center bg-primary-500 p-4 rounded-2xl"
               >
                 <img
@@ -167,24 +195,26 @@
                   width="24px"
                   height="24px"
                 />
-                <p class="text-[12px] mt-[5px] text-white">Contact</p>
+                <p class="text-[12px] mt-[5px] text-white font-bold">Contact</p>
               </a>
             </div>
           </navbar>
           <!-- about me -->
           <section class="w-full h-full bg-white py-4 pl-12 pr-8 rounded-2xl">
-            <div class="flex w-[500px] items-center">
+            <div
+              class="flex xl:w-[500px] xl:items-center justify-center xl:justify-start"
+            >
               <h1
                 class="font-heading text-[40px] mr-8 tracking-wide font-semibold"
               >
                 Contact
               </h1>
               <div
-                class="w-1/2 h-[2px] bg-gradient-to-r from-[#FE9119] to-[#ED250A]"
+                class="xl:w-1/2 xl:h-[2px] xl:bg-gradient-to-r from-[#FE9119] to-[#ED250A]"
               ></div>
             </div>
 
-            <div class="flex gap-4">
+            <div class="flex gap-4 lg:flex-row flex-col">
               <div class="bg-[#FFEED9] px-4 py-8 flex-1 rounded-2xl">
                 <div class="flex">
                   <div class="mr-2">
@@ -197,8 +227,8 @@
                   </div>
                   <div>
                     <h3 class="font-heading font-semibold mb-2">Phone:</h3>
-                    <p class="font-heading">+0820382038</p>
-                    <p class="font-heading">+0820382038</p>
+                    <p class="font-heading">+6281286524358</p>
+                    <p class="font-heading">+62895365929860</p>
                   </div>
                 </div>
               </div>
@@ -215,7 +245,7 @@
                   <div>
                     <h3 class="font-heading font-semibold mb-2">Email:</h3>
                     <p class="font-heading text-[14px] font-semibold">
-                      beatricewambuimbugua@gmail.com
+                      mujahid.ansori.dev@gmail.com
                     </p>
                   </div>
                 </div>
@@ -224,28 +254,50 @@
 
             <div class="bg-[#F8FBFB] mt-8 px-8 py-8 rounded-2xl">
               <p>
-                I am always open to discussing <strong>new projects, opportunities in
-                tech world, partnerships</strong> and more so <strong>mentorship</strong>.
+                I am always open to discussing
+                <strong
+                  >new projects, opportunities in tech world,
+                  partnerships</strong
+                >
+                and more so <strong>mentorship</strong>.
               </p>
               <form class="pr-8">
                 <div class="flex flex-col mt-3">
                   <label for="name" class="font-bold">Name:</label>
-                  <input type="text" id="name" class="bg-[#F8FBFB] border-b-2 border-slate-300 focus:outline-none"/>
+                  <input
+                    type="text"
+                    id="name"
+                    class="bg-[#F8FBFB] border-b-2 border-slate-300 focus:outline-none"
+                  />
                 </div>
                 <div class="flex flex-col mt-3">
                   <label for="email" class="font-bold">Email:</label>
-                  <input type="email" id="email" class="bg-[#F8FBFB] border-b-2 border-slate-300 focus:outline-none"/>
+                  <input
+                    type="email"
+                    id="email"
+                    class="bg-[#F8FBFB] border-b-2 border-slate-300 focus:outline-none"
+                  />
                 </div>
                 <div class="flex flex-col mt-3">
                   <label for="message" class="font-bold">Message:</label>
-                  <input type="text" id="message" class="bg-[#F8FBFB] border-b-2 border-slate-300 focus:outline-none"/>
+                  <input
+                    type="text"
+                    id="message"
+                    class="bg-[#F8FBFB] border-b-2 border-slate-300 focus:outline-none"
+                  />
                 </div>
-                <button class="rounded-3xl border-[#FD8A18] border-2 px-6 py-2 mt-8 text-[12px] font-bold">Submit</button>
+                <button
+                  class="rounded-3xl border-[#FD8A18] border-2 px-6 py-2 mt-8 text-[12px] font-bold"
+                >
+                  Submit
+                </button>
               </form>
             </div>
           </section>
         </div>
       </section>
     </main>
+
+    <h2></h2>
   </body>
 </html>
