@@ -6,7 +6,7 @@ the assignment is slicing the design into usable web page. hopefully student can
 
 ## design
 
-[FIGMA] (https://www.figma.com/file/HrpywqiFvbgrbYVcEPAYZj/Individual-Assignment-Batch-8?type=design&mode=design&t=4WdciSciltKnCJwT-1)
+[FIGMA](https://www.figma.com/file/HrpywqiFvbgrbYVcEPAYZj/Individual-Assignment-Batch-8?type=design&mode=design&t=4WdciSciltKnCJwT-1)
 
 ## Tools
 
