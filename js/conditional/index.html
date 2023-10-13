@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- make login form with username and password -->
+    <form class="w-64 mx-auto mt-8">
+      <label for="username" class="block mb-2">Username:</label>
+      <input
+        type="text"
+        id="username"
+        name="username"
+        required
+        class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md"
+      />
+
+      <label for="password" class="block mb-2">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        
+        class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md"
+      />
+
+      <input
+        type="submit"
+        value="Login"
+        id="btn-login"
+        class="w-full py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600"
+      />
+    </form>
+
+    <script src="./data/user.js" type="module"></script>
+    <script src="./js/login.js" type="module"></script>
+  </body>
+</html>
