@@ -7,15 +7,66 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="flex flex-col items-center mt-36">
-      <img
-        alt="Profile Image"
-        class="w-32 h-32 rounded-full"
-        id="profile-image"
-      />
-      <span class="mt-2 text-lg font-bold" id="username">Username</span>
+    <header class="flex w-full py-4 bg-slate-300 px-12 items-center">
+      <div class="flex items-center justify-end w-full mr-8">
+        <img
+          alt="Profile Image"
+          class="w-8 h-8 rounded-full mr-4"
+          id="profile-image"
+        />
+        <span class="text-md font-semibold" id="username">Username</span>
+      </div>
+      <button
+        class="bg-red-400 text-white py-2 px-2 rounded-md"
+        onclick="onLogout()"
+      >
+        Logout
+      </button>
+    </header>
+
+    <div class="container flex flex-col max-w-[600px] mx-auto border-4">
+      <div>
+        <label for="taksName" class="block mb-2">Masukan Task</label>
+        <input
+          type="text"
+          id="taksName"
+          class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md"
+        />
+      </div>
+      <div>
+        <label for="taksName" class="block mb-2">Masukan status</label>
+        <select name="todo" id="statusTask">
+          <option value="todo">Todo</option>
+          <option value="onProgress">On Progress</option>
+          <option value="done">Done</option>
+        </select>
+      </div>
+
+      <button id="submitTask" class=" mt-5 w-fit py-2 text-white px-4 bg-blue-500 rounded-md hover:bg-blue-600">Submit Task</button>
+
+      <div class="mt-10" id="showData">
+        <table class="border-collapse border border-slate-400 gap-3 w-full">
+          <thead>
+            <tr>
+              <th class="border border-slate-300 text-center">No</th>
+              <th class="border border-slate-300 text-center">Task Name</th>
+              <th class="border border-slate-300 text-center">Status</th>
+              <th class="border border-slate-300 text-center">Created At</th>
+            </tr>
+          </thead>
+          <tbody id="contentTask">
+            <tr>
+              <td class="border border-slate-300 text-center">1</td>
+              <td class="border border-slate-300 text-center">Memasak</td>
+              <td class="border border-slate-300 text-center">Done</td>
+              <td class="border border-slate-300 text-center">23 september 2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
+    <script src="../data/task.js"></script>
     <script src="../js/dashboard.js"></script>
   </body>
 </html>

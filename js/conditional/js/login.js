@@ -16,8 +16,7 @@ btnLogin.addEventListener("click", (e) => {
 
   if (user) {
     window.location.href = "./pages/dashboard.html";
-    localStorage.setItem("username", usernameValue);
-    localStorage.setItem("imageUrl", user.imgUrl);
+    localStorage.setItem('user', JSON.stringify(user));
   } else {
     alert("Username atau password salah");
   }
